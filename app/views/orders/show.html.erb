@@ -31,5 +31,10 @@ This is an order.
   </tbody>
 </table>
 
+<p>
+  <strong>Total Price:</strong>
+  <%= @order.totalSum %>
+</p>
+
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>
