@@ -83,6 +83,7 @@ pl:
 ```
 
 ## Part 3: Some more functionality
+Our functionality revolves around a functionality to change the theme of the site. Based on JavaScript, we added an on click event  - as soon as the specific button is clicked, the theme of the site changes. Lines of Code of the JavaScript Functionality:
 
 
 ## Links
