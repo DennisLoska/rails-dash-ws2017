@@ -3,6 +3,8 @@
 _Authors: Dennis Loska, Tony Dorfmeister, Ai Dong 07.02.2018_
 
 ## Part 1: Add a Sort or Search Functionality
+To add a search or sort functionality the controller within the MVC model needs to be changed, so the view would be updated correctly.
+In order to enable a ascending order of the price of a pumpkin we added the following lines of code:
 
 ```ruby
 class PumpkinsController < ApplicationController
@@ -17,6 +19,8 @@ class PumpkinsController < ApplicationController
 end
 ```
 ## Part 2: Internationalization
+Based on the API provided by rails, enabling a implementation of a new language is rather comfortable. 
+First we made the locale known and selected the locale using the route. Then we set the locale in the controller  and implemented the switch. Here are some code snippets.
 
 ```erb
   <body>
