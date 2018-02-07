@@ -83,7 +83,25 @@ pl:
 ```
 
 ## Part 3: Some more functionality
-Our functionality revolves around a functionality to change the theme of the site. Based on JavaScript, we added an on click event  - as soon as the specific button is clicked, the theme of the site changes. Lines of Code of the JavaScript Functionality:
+Our functionality revolves around a functionality to change the theme of the site. Based on JavaScript, we added an on click event  - as soon as the specific button named "dark theme" is clicked, the theme of the site changes. Lines of Code of the JavaScript Functionality:
+
+```
+function changeTheme() {
+    let background = document.getElementById('app-container');
+     let table = document.getElementsByTagName('table')[0];
+     let headline = document.getElementsByTagName('h1')[0];
+     let themeButton = document.getElementById('js-theme-button');
+ 
+     document.getElementsByTagName('body')[0].style.backgroundColor = 'ainsboro';
+     background.style.backgroundColor = '#282828';
+     background.style.color = '#ffffff';
+     table.style.backgroundColor = '#76B900';
+     headline.style.color = '#76B900';
+ 
+ } 
+ ```
+ 
+
 ![dark theme](https://github.com/DennisLoska/rails-dash-ws2017/blob/master/images/dark.png?raw=true)
 ![light_theme](https://github.com/DennisLoska/rails-dash-ws2017/blob/master/images/light.png?raw=true)
 
